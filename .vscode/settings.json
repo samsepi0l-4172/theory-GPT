@@ -1,9 +1,0 @@
-{
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "python.analysis.autoImportCompletions": true,
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "javascript.experimental.updateImportsOnPaste": true,
-  "notebook.defaultFormatter": "ms-python.black-formatter",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeLensFontFamily": "MesloLGS NF"
-}
