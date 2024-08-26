@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "theory-gpt"
+version = "0.1.0"
+description = ""
+authors = ["samsepi0l-4172 <89460136+samsepi0l-4172@users.noreply.github.com>"]
+license = "GNU"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+black = "^24.8.0"
+boto3 = "^1.35.5"
+crewai = "^0.51.1"
+crewai-tools = "^0.8.3"
+faiss-cpu = "^1.8.0.post1"
+ipykernel = "^6.29.5"
+ipython = "^8.26.0"
+jq = "^1.8.0"
+jupyter-black = "^0.3.4"
+langchain = "^0.2.14"
+langchain-cli = "^0.0.30"
+langchain-experimental = "^0.0.64"
+langchain-groq = "^0.1.9"
+langchain-ollama = "^0.1.1"
+langchain-openai = "^0.1.22"
+langchain-unstructured = "^0.1.2"
+langdetect = "^1.0.9"
+langgraph = "^0.2.14"
+langserve = "^0.2.2"
+matplotlib = "^3.9.2"
+ollama = "^0.3.1"
+openai = "^1.42.0"
+sqlalchemy = "^2.0.32"
+sqlite-vss = "^0.1.2"
+streamlit = "^1.37.1"
+watchdog = "^4.0.2"
+yfinance = "^0.2.43"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79

@@ -37,7 +37,9 @@ def embed_file(file_path):
     loader = TextLoader(file_path)
     docs = loader.load_and_split(text_splitter=splitter)
     embeddings = OpenAIEmbeddings()
-    cached_embeddings = CacheBackedEmbeddings.from_bytes_store(embeddings, cache_dir)
+    cached_embeddings = CacheBackedEmbeddings.from_bytes_store(
+        embeddings, cache_dir
+    )
     vectorstore = FAISS.from_documents(docs, cached_embeddings)
     retriever = vectorstore.as_retriever()
     return retriever
@@ -50,7 +52,9 @@ def transcribe_chunks(chunk_folder, destination):
     files = glob.glob(f"{chunk_folder}/*.mp3")
     files.sort()
     for file in files:
-        with open(file, "rb") as audio_file, open(destination, "a") as text_file:
+        with open(file, "rb") as audio_file, open(
+            destination, "a"
+        ) as text_file:
             transcript = openai.Audio.transcribe(
                 "whisper-1",
                 audio_file,
@@ -155,7 +159,9 @@ if video:
             """
             )
 
-            first_summary_chain = first_summary_prompt | llm | StrOutputParser()
+            first_summary_chain = (
+                first_summary_prompt | llm | StrOutputParser()
+            )
 
             summary = first_summary_chain.invoke(
                 {"text": docs[0].page_content},
@@ -178,7 +184,9 @@ if video:
 
             with st.status("Summarizing...") as status:
                 for i, doc in enumerate(docs[1:]):
-                    status.update(label=f"Processing document {i+1}/{len(docs)-1} ")
+                    status.update(
+                        label=f"Processing document {i+1}/{len(docs)-1} "
+                    )
                     summary = refine_chain.invoke(
                         {
                             "existing_summary": summary,

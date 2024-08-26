@@ -3,7 +3,14 @@ import os
 import streamlit as st
 
 folder = "pages"
-files = ["DocumentGPT", "PrivateGPT", "QuizGPT", "SiteGPT", "MeetingGPT", "InvestorGPT"]
+files = [
+    "DocumentGPT",
+    "PrivateGPT",
+    "QuizGPT",
+    "SiteGPT",
+    "MeetingGPT",
+    "InvestorGPT",
+]
 
 # Create files in pages folder
 os.makedirs(folder, exist_ok=True)
