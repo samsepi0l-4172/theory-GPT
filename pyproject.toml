@@ -10,7 +10,7 @@ package-mode = false
 [tool.poetry.dependencies]
 python = ">=3.12,<=3.13"
 black = "^24.8.0"
-boto3 = "^1.35.5"
+boto3 = "^1.35.6"
 crewai = "^0.51.1"
 crewai-tools = "^0.8.3"
 faiss-cpu = "^1.8.0.post1"
