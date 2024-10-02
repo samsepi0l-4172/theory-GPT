@@ -3064,6 +3064,21 @@ groq = ">=0.4.1,<1"
 langchain-core = ">=0.2.39,<0.3.0"
 
 [[package]]
+name = "langchain-ollama"
+version = "0.1.3"
+description = "An integration package connecting Ollama and LangChain"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "langchain_ollama-0.1.3-py3-none-any.whl", hash = "sha256:e4017178b2fbf822c74b29eaca3732c925265a63d9dd9fe6970c34fd32568c4a"},
+    {file = "langchain_ollama-0.1.3.tar.gz", hash = "sha256:cc5f3d510e591cb66b382f4fe32801877593c0d0a1dc48e9e8fcd16b8e01c454"},
+]
+
+[package.dependencies]
+langchain-core = ">=0.2.36,<0.3.0"
+ollama = ">=0.3.0,<1"
+
+[[package]]
 name = "langchain-openai"
 version = "0.1.25"
 description = "An integration package connecting OpenAI and LangChain"
@@ -3990,6 +4005,20 @@ files = [
 rsa = ["cryptography (>=3.0.0)"]
 signals = ["blinker (>=1.4.0)"]
 signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
+
+[[package]]
+name = "ollama"
+version = "0.3.3"
+description = "The official Python client for Ollama."
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "ollama-0.3.3-py3-none-any.whl", hash = "sha256:ca6242ce78ab34758082b7392df3f9f6c2cb1d070a9dede1a4c545c929e16dba"},
+    {file = "ollama-0.3.3.tar.gz", hash = "sha256:f90a6d61803117f40b0e8ff17465cab5e1eb24758a473cfe8101aff38bc13b51"},
+]
+
+[package.dependencies]
+httpx = ">=0.27.0,<0.28.0"
 
 [[package]]
 name = "onnxruntime"
@@ -7552,4 +7581,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.12,<3.13"
-content-hash = "5302edeee94a1246f00194462491f07ff362340adfcd249bffdcc6892a0952bf"
+content-hash = "887fc8426093b50ea5fc20adddead92297fc67cac5b7dd32c04db145cdca69e7"
