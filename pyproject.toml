@@ -8,34 +8,17 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.12.5,<=3.13"
+python = ">=3.12,<3.13"
 black = "^24.8.0"
-boto3 = "^1.35.18"
-crewai = "^0.51.1"
-crewai-tools = "^0.8.3"
-faiss-cpu = "^1.8.0.post1"
+crewai = {extras = ["tools"], version = "*"}
 ipykernel = "^6.29.5"
-ipython = "^8.27.0"
-jq = "^1.8.0"
-jupyter-black = "^0.3.4"
-langchain = "^0.2.16"
-langchain-cli = "^0.0.30"
-langchain-experimental = "^0.0.64"
-langchain-groq = "^0.1.10"
-langchain-ollama = "^0.1.3"
-langchain-openai = "^0.1.23"
-langchain-unstructured = "^0.1.2"
-langdetect = "^1.0.9"
-langgraph = "^0.2.19"
-langserve = "^0.2.3"
-matplotlib = "^3.9.2"
-sqlalchemy = "^2.0.34"
-sqlite-vss = "^0.1.2"
-streamlit = "^1.38.0"
-watchdog = "^4.0.2"
-yfinance = "^0.2.43"
-
-
+langchain = "*"
+langchain-groq = "*"
+langchain-openai = "*"
+langgraph = "*"
+pydub = "^0.25.1"
+streamlit = "^1.39.0"
+yfinance = "^0.2.44"
 
 [build-system]
 requires = ["poetry-core"]
