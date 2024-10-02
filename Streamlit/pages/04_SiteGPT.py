@@ -1,9 +1,9 @@
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 import streamlit as st
 from langchain_community.document_loaders import SitemapLoader
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 llm = ChatOpenAI(
