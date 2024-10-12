@@ -7,10 +7,8 @@ from langchain_community.retrievers import WikipediaRetriever
 from langchain_core.callbacks import StreamingStdOutCallbackHandler
 from langchain_core.output_parsers import BaseOutputParser
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.tools import Tool
 from langchain_openai import ChatOpenAI
 from langchain_text_splitters import CharacterTextSplitter
-from pydantic.v1 import BaseModel, Field
 
 
 class JsonOutputParser(BaseOutputParser):
